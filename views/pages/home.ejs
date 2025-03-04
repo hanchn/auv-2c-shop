@@ -1,0 +1,21 @@
+<!-- /views/pages/index.ejs -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <!-- 引入头部组件 -->
+    <%- include('../components/header') %>
+
+    <main>
+      <h2>欢迎来到首页！</h2>
+      <p>这里是网站的主要内容区域。</p>
+    </main>
+
+    <!-- 引入底部组件 -->
+    <%- include('../components/footer') %>
+  </body>
+</html>
