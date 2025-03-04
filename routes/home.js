@@ -6,6 +6,7 @@ const router = express.Router();
 
 // 定义用户列表路由
 router.get('/', (req, res) => {
+  console.log('用户列表');
   res.send('首页');
 });
 
