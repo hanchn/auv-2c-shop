@@ -8,7 +8,7 @@ const port = config.get('port');
 const logger = require('./middlewares/logger');
 
 // 使用日志中间件
-app.use(logger);
+//app.use(logger);
 
 app.use('/', routes);
 // 设置视图引擎为 EJS
@@ -19,6 +19,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('views', path.join(__dirname, 'views'));
 
 // 使用配置
-app.listen(port, () => {
-  console.log(`服务器运行在端口：${port}`);
+app.listen(3000, () => {
+  console.log(`服务器运行在端口：${3000}`);
 });
