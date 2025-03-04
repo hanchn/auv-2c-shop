@@ -3,6 +3,7 @@ const path = require('path');
 const app = express();
 // 在 app.js 中引入路由模块
 const routes = require('./routes');
+console.log(routes)
 const config = require('config');
 const port = config.get('port');
 const logger = require('./middlewares/logger');

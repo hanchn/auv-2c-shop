@@ -13,6 +13,7 @@ fs.readdirSync(__dirname).forEach((file) => {
   // 动态引入路由模块
   const routeModule = require(`./${file}`);
   // 将路由模块挂载到对应的路径
+  console.log('routeName ', routeName)
   router.use(`/${routeName}`, routeModule);
 });
 
