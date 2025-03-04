@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "mock": "node mock/server.js",
-    "dev": "NODE_ENV=development node watch app.js",
+    "dev": "NODE_ENV=development node --watch app.js",
     "test": "NODE_ENV=test node app.js",
     "pre": "NODE_ENV=preproduction node app.js",
     "prod": "NODE_ENV=production node app.js"
