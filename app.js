@@ -5,6 +5,10 @@ const app = express();
 const routes = require('./routes/index.js');
 const config = require('config');
 const port = config.get('port');
+const logger = require('./middlewares/logger');
+
+// 使用日志中间件
+app.use(logger);
 
 app.use('/', routes);
 // 设置视图引擎为 EJS
