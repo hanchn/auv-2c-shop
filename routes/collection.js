@@ -12,7 +12,7 @@ router.get('/', (req, res, next) => {
 
 // 定义获取特定用户信息的路由
 router.get('/:id', (req, res, next) => {
-  res.send(`用户ID: ${req.params.id}`);
+  res.render('components', { title: '关于我们', message: '了解更多关于我们的信息。' });
   next()
 });
 
