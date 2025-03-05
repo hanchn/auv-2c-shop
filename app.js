@@ -19,6 +19,10 @@ app.use('/', routes);
 app.use(logger);
 
 // 使用配置
-app.listen(port, () => {
-  console.log(`服务器运行在端口：${port}`);
+app.listen(port, (err) => {
+  if (err) {
+    console.error('Error starting server:', err);
+  } else {
+    console.log(`服务器运行在端口：${port}`);
+  }
 });
